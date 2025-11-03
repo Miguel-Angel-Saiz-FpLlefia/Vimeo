@@ -28,7 +28,7 @@
     & .imagenHeader {
       display: flex;
       align-items: center;
-      margin-left: calc((100vw - 1400px) / 2);
+      margin-left: 230px;
     }
 
     & #logo {
@@ -51,13 +51,11 @@
         display: flex;
         align-items: center;
         gap: 4px;
-
-        &:hover {
-          color: rgb(61, 71, 81);
-        }
+        margin-left: -15px;
 
         & .dropdown-arrow {
           font-size: 10px;
+          rotate: 90deg;
         }
       }
     }
@@ -66,7 +64,7 @@
       display: flex;
       align-items: center;
       gap: 16px;
-      margin-right: calc((100vw - 1400px) / 2);
+      margin-right: 240px;
 
       & #botonContactSales {
         background: transparent;
@@ -77,10 +75,6 @@
         font-weight: 500;
         cursor: pointer;
         padding: 8px 12px;
-
-        &:hover {
-          color: rgb(61, 71, 81);
-        }
       }
 
       & #botonLogin {
@@ -92,10 +86,6 @@
         font-weight: 500;
         cursor: pointer;
         padding: 8px 12px;
-
-        &:hover {
-          color: rgb(61, 71, 81);
-        }
       }
 
       & #botonJoin {
@@ -113,10 +103,6 @@
         display: flex;
         align-items: center;
         gap: 12px;
-
-        &:hover {
-          background-color: rgb(220, 225, 230);
-        }
 
         & .arrow {
           background-color: rgb(23, 213, 255);
@@ -145,10 +131,10 @@
   .videoPrincipal {
     position: relative;
     width: 100%;
-    max-width: 1400px;
+    max-width: 1376px;
     height: 600px;
     margin: 0 auto;
-    margin-top: 95px;
+    margin-top: 45px;
     overflow: hidden;
     border-radius: 20px;
     display: flex;
@@ -185,7 +171,6 @@
         text-transform: uppercase;
         margin-bottom: 20px;
         letter-spacing: 2px;
-        opacity: 0.95;
       }
 
       & #subtitulo {
@@ -203,7 +188,6 @@
         font-weight: 400;
         margin-bottom: 40px;
         line-height: 1.6;
-        opacity: 0.95;
       }
 
       & #seePlans {
@@ -239,11 +223,6 @@
         font-weight: 500;
         color: white;
         margin-top: 20px;
-        transition: opacity 0.3s ease;
-
-        &:hover {
-          opacity: 0.8;
-        }
 
         & img {
           width: 16px;
@@ -266,18 +245,12 @@
       cursor: pointer;
       backdrop-filter: blur(10px);
 
-      &:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-      }
-
       & img {
         width: 80px;
         height: 30px;
         background-color: rgb(23, 213, 255);
         border-radius: 8px;
         padding: 12px;
-        flex-shrink: 0;
       }
 
       & span {
@@ -364,11 +337,6 @@
       font-size: 16px;
       font-weight: 500;
       cursor: pointer;
-      transition: background-color 0.3s ease;
-
-      &:hover {
-        background-color: rgb(20, 200, 240);
-      }
     }
   }
 
@@ -430,10 +398,6 @@
         font-weight: 500;
         margin-bottom: 15px;
         cursor: pointer;
-
-        &:hover {
-          gap: 20px;
-        }
 
         & img {
           display: none;
@@ -682,20 +646,12 @@
       gap: 30px;
       animation: scroll 60s linear infinite;
 
-      .opiniones:hover {
-        animation-play-state: paused;
-      }
-
       & .opinion {
         flex: 0 0 550px;
         background-color: rgb(250, 252, 253);
         padding: 50px 40px;
         border-radius: 16px;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-
-        & :hover {
-          animation-play-state: paused;
-        }
 
         & .quotes {
           display: block;
@@ -873,7 +829,6 @@
     order: 12;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto auto;
     gap: 40px;
 
     & video {
@@ -909,7 +864,6 @@
         background-color: rgb(23, 213, 255);
         border-radius: 8px;
         padding: 12px;
-        flex-shrink: 0;
       }
 
       & span {
@@ -971,10 +925,6 @@
       position: relative;
       top: -150px;
       right: 50px;
-
-      &:hover {
-        background-color: rgb(30, 36, 42);
-      }
     }
 
     & #tituloHR {
@@ -1151,7 +1101,6 @@
         background-color: rgb(23, 213, 255);
         border-radius: 8px;
         padding: 12px;
-        flex-shrink: 0;
       }
 
       & span {
