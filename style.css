@@ -2849,7 +2849,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
-    background-color: rgb(223, 228, 234);
+    background-color: rgba(255, 255, 255, 0.5);
     position: fixed;
     top: 0;
     width: 100%;
@@ -2873,16 +2873,19 @@
       display: flex;
       align-items: center;
       gap: 32px;
-      margin-left: -450px;
+      margin-left: -330px;
+      transition: all 0.8 ease-in;
 
       & .navLink {
+        width: 97px;
+        height: 52px;
         text-decoration: none;
         color: rgb(10, 14, 18);
         font-size: 16px;
         font-weight: 500;
-        cursor: pointer;
         display: flex;
         align-items: center;
+        justify-content: center;
         gap: 4px;
         margin-left: -15px;
 
@@ -2890,6 +2893,13 @@
           font-size: 10px;
           rotate: 90deg;
         }
+      }
+
+      & :hover {
+        background-color: rgb(223, 228, 234);
+        border-radius: 12px;
+        cursor: pointer;
+        text-align: center;
       }
     }
 
@@ -2922,12 +2932,12 @@
       }
 
       & #botonJoin {
-        background-color: white;
+        background-color: rgb(223, 228, 234);
         border: none;
         width: 139px;
         height: 56px;
         padding: 8px 8px 8px 20px;
-        border-radius: 25px;
+        border-radius: 12px;
         font-size: 16px;
         font-family: "ABC Repro";
         color: rgb(10, 14, 18);
@@ -2936,6 +2946,7 @@
         display: flex;
         align-items: center;
         gap: 12px;
+        transition: all 0.8 ease-in;
 
         & .arrow {
           background-color: rgb(23, 213, 255);
@@ -2945,6 +2956,13 @@
           justify-content: center;
           font-size: 18px;
           padding: 0 14px;
+        }
+        &:hover {
+          background-color: rgb(23, 213, 255);
+
+          & .arrow {
+            background-color: #17aeff;
+          }
         }
       }
 
@@ -3035,9 +3053,10 @@
         font-size: 16px;
         font-weight: 500;
         cursor: pointer;
+        transition: all 0.8 ease-in;
 
         &:hover {
-          background-color: rgb(20, 200, 240);
+          background-color: #17aeff;
         }
 
         & img {
@@ -3056,10 +3075,15 @@
         font-weight: 500;
         color: white;
         margin-top: 20px;
+        transition: all 0.8 ease-in;
 
         & img {
           width: 16px;
           height: 16px;
+        }
+
+        &:hover {
+          opacity: 0.5;
         }
       }
     }
@@ -3077,6 +3101,7 @@
       padding: 24px;
       cursor: pointer;
       backdrop-filter: blur(10px);
+      transition: all 0.8 ease-in;
 
       & img {
         width: 80px;
@@ -3093,6 +3118,19 @@
         font-weight: 500;
         color: rgb(10, 14, 18);
         line-height: 1.3;
+      }
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.6);
+
+        & img {
+          background-color: black;
+          content: url(img/play_video_whithe.svg);
+        }
+
+        & span {
+          color: white;
+        }
       }
     }
   }
@@ -3170,6 +3208,11 @@
       font-size: 16px;
       font-weight: 500;
       cursor: pointer;
+      transition: all 0.8 ease-in;
+
+      &:hover {
+        background-color: #17aeff;
+      }
     }
   }
 
@@ -3255,11 +3298,25 @@
         gap: 15px;
         border: none;
         border-radius: 12px;
+        transition: all 0.8 ease-in;
 
         & span {
           color: rgb(250, 252, 253);
           font-size: 16px;
           font-weight: 500;
+        }
+
+        &:hover {
+          background-color: white;
+          cursor: pointer;
+
+          & span {
+            color: black;
+          }
+
+          & img {
+            content: url(img/arrow_black.svg);
+          }
         }
       }
     }
@@ -3332,6 +3389,7 @@
       padding-right: 20px;
       margin: 1330px auto auto -328px;
       cursor: pointer;
+      transition: all 0.8 ease-in;
 
       & img {
         width: 80px;
@@ -3339,6 +3397,23 @@
         background-color: rgb(23, 213, 255);
         border-radius: 12px;
         padding: 12px;
+      }
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.6);
+
+        & img {
+          background-color: black;
+          content: url(img/play_video_whithe.svg);
+        }
+      }
+    }
+
+    &:has(.videoLogo:hover) {
+      & #nombreColeWebley,
+      & #positionColeWebley,
+      & #meberColeWebley {
+        color: white;
       }
     }
 
@@ -3397,10 +3472,20 @@
     margin-right: auto;
     margin-top: 100px;
     order: 7;
+    transition: all 0.8 ease-in;
 
     & img {
       width: 16px;
       height: 16px;
+    }
+
+    &:hover {
+      background-color: white;
+      color: black;
+
+      & img {
+        content: url(img/arrow_black.svg);
+      }
     }
   }
 
@@ -3419,6 +3504,7 @@
     & .plan {
       cursor: pointer;
       margin-top: 15px;
+      transition: all 0.8 ease-in;
 
       & .imagenTituloProdcutos {
         display: flex;
@@ -3453,6 +3539,10 @@
         margin-left: 45px;
         margin-top: -20px;
       }
+
+      &:hover {
+        opacity: 0.5;
+      }
     }
   }
 
@@ -3478,6 +3568,10 @@
       display: flex;
       gap: 30px;
       animation: scroll 60s linear infinite;
+
+      &:hover {
+        animation-play-state: paused;
+      }
 
       & .opinion {
         flex: 0 0 550px;
@@ -3645,9 +3739,15 @@
             transition: background-color 0.3s ease;
             width: 261px;
             height: 48px;
+            transition: all 0.8 ease-in;
 
             &:hover {
-              background-color: rgb(20, 200, 240);
+              background-color: black;
+              color: white;
+
+              & img {
+                content: url(img/arrow_white.svg);
+              }
             }
           }
         }
@@ -3690,6 +3790,7 @@
       backdrop-filter: blur(10px);
       width: 302px;
       height: 93px;
+      transition: all 0.8 ease-in;
 
       & img {
         width: 80px;
@@ -3706,6 +3807,19 @@
         font-weight: 500;
         color: rgb(10, 14, 18);
         line-height: 1.3;
+      }
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.6);
+
+        & img {
+          background-color: black;
+          content: url(img/play_video_whithe.svg);
+        }
+
+        & span {
+          color: white;
+        }
       }
     }
 
@@ -3758,6 +3872,16 @@
       position: relative;
       top: -150px;
       right: 50px;
+      transition: all 0.8 ease-in;
+
+      &:hover {
+        background-color: white;
+        color: black;
+
+        & img {
+          content: url(img/arrow_black.svg);
+        }
+      }
     }
 
     & #tituloHR {
@@ -3888,6 +4012,9 @@
       top: -50px;
       right: 50px;
       gap: 350px;
+      width: 578px;
+      height: 48px;
+      transition: all 0.8 ease-in;
 
       & p {
         font-size: 18px;
@@ -3898,6 +4025,23 @@
       & img {
         width: 12px;
         height: 12px;
+      }
+
+      &:hover {
+        background-color: white;
+        cursor: pointer;
+        border-radius: 12px;
+
+        & p {
+          color: black;
+          position: relative;
+          left: 15px;
+        }
+
+        & img {
+          content: url(img/arrow_black.svg);
+          rotate: -45deg;
+        }
       }
     }
 
@@ -3927,6 +4071,7 @@
       width: 350px;
       height: 55px;
       margin-left: 50px;
+      transition: all 0.8 ease-in;
 
       & img {
         width: 80px;
@@ -3943,6 +4088,14 @@
         font-weight: 500;
         color: #fafcfd;
         line-height: 1.3;
+      }
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.6);
+
+        & img {
+          background-color: black;
+        }
       }
     }
   }
@@ -3983,10 +4136,20 @@
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         width: 672px;
         height: 584px;
+        transition: all 0.8 ease-in;
 
         &:hover {
-          transform: translateY(-5px);
-          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+          background-color: white;
+
+          & .botonNoticia1,
+          & .botonNoticia2 {
+            background-color: white;
+            color: black;
+
+            & img {
+              content: url(img/arrow_black.svg);
+            }
+          }
         }
 
         & .newNoticia {
@@ -4030,6 +4193,7 @@
           position: relative;
           top: -320px;
           right: -255px;
+          transition: all 0.8 ease-in;
 
           &:hover {
             background-color: rgb(30, 36, 42);
@@ -4080,6 +4244,12 @@
             font-size: 16px;
             font-weight: 400;
             color: rgb(10, 14, 18);
+            transition: all 0.8 ease-in;
+
+            &:hover {
+              color: #17aeff;
+              cursor: pointer;
+            }
           }
         }
 
@@ -4106,8 +4276,14 @@
           transition: transform 0.3s ease, box-shadow 0.3s ease;
 
           &:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            background-color: #17aeff;
+
+            & .imgBotonFree {
+              background-color: rgb(23, 213, 255);
+              & img {
+                background: transparent;
+              }
+            }
           }
 
           & span {
@@ -4127,6 +4303,7 @@
             & img {
               width: 12px;
               height: 12px;
+              background: transparent;
             }
           }
 
@@ -4143,6 +4320,67 @@
             & img {
               width: 12px;
               height: 12px;
+              background: transparent;
+            }
+          }
+        }
+
+        & #but247 {
+          width: fit-content;
+          display: inline-flex;
+          align-items: center;
+          gap: 12px;
+          padding: 14px 24px;
+          border-radius: 8px;
+          border: none;
+          cursor: pointer;
+          font-size: 16px;
+          font-weight: 500;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+          &:hover {
+            background-color: rgb(23, 213, 255);
+
+            & .imgBoton247 {
+              background-color: #17aeff;
+            }
+          }
+
+          & span {
+            order: 1;
+          }
+
+          & .imgBotonFree {
+            order: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 28px;
+            background-color: rgb(0, 170, 207);
+            border-radius: 6px;
+
+            & img {
+              width: 12px;
+              height: 12px;
+              background: transparent;
+            }
+          }
+
+          & .imgBoton247 {
+            order: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 28px;
+            background-color: white;
+            border-radius: 6px;
+
+            & img {
+              width: 12px;
+              height: 12px;
+              background: transparent;
             }
           }
         }
@@ -4230,9 +4468,10 @@
             text-decoration: none;
             transition: color 0.2s ease;
             width: 183px;
+            transition: all 0.8 ease-in;
 
             &:hover {
-              color: rgb(10, 14, 18);
+              color: #17aeff;
             }
           }
         }
@@ -4255,10 +4494,10 @@
           width: 24px;
           height: 24px;
           cursor: pointer;
-          transition: opacity 0.3s ease;
+          transition: all 0.8 ease-in;
 
           &:hover {
-            opacity: 0.7;
+            color: #17aeff;
           }
         }
       }
@@ -4309,7 +4548,7 @@
           & a {
             color: rgb(61, 71, 81);
             text-decoration: none;
-            transition: color 0.3s ease;
+            transition: all 0.8 ease-in;
 
             &:hover {
               color: rgb(10, 14, 18);
